@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>miLocal</title>
+	<meta name="description" content="Compra, vende o simplemente averigua en que tienda local venden lo que buscas" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<header>
+		<div class="cabecera_izq"><!--CABECERA IZQUIERDA-->
+			<a href="#"><img src="imgs/SVG/reply.svg" class="boton_cabecera left"></a>
+		</div>
+		<div class="buscador"><!--CABECERA CENTRAL-->
+			<form action="#">
+				<input type="search" class="buscar" placeholder="Busca un artículo">
+			</form>
+		</div>
+	</header>
+
+	<section class="items">
+		<article class="item">
+
+			<div class="img_size left">
+				<figure>
+					<img class="minifoto" src="imgs/foto.jpg">
+				</figure>
+			</div>
+
+			<div class="detalles">
+				<h2 class="titulo">
+					Nombre del artículo
+				</h2>
+				<p class="descripcion">
+					Breve descripción del artículo, Breve descripción del artículo.
+				</p>
+
+				<div class="item_data">
+						
+					<p class="condicion left">
+						<strong>Nuevo</strong>
+					</p>
+					<p class="tienda right">
+						<strong>Fulanito</strong>
+					</p>
+				</div>
+
+				<p class="precio">
+					$1000
+				</p>
+			</div>
+
+		</article>
+	</section>
+
+	<nav>
+		<ul class="menu">
+			<li>Inicio</li>
+			<li>miLocal</li>
+			<li>Perfil</li>
+			<li>Monedero</li>
+			<li>Ajustes</li>
+		</ul>
+	</nav>
+
+	<script src="js/vendor/jquery-2.1.1.min"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
