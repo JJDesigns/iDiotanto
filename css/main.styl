@@ -1,0 +1,131 @@
+blanco = #eee
+gris1 = #444
+gris2 = #7a7a7a
+
+/////////////////////////////////COMIENZA EL BODY
+body
+	background blanco
+	color gris1
+	font-family Arial
+	font-size 16px
+
+/////////////////////////////////COMIENZA EL HEADER 
+header
+	background gris1
+	overflow hidden
+	padding .5em
+	position relative
+	
+	.cabecera_izq
+		margin 0
+		padding 0
+		
+		.boton_cabecera
+			padding 0.2em 0 0 0.8em
+			width 1.3em
+		
+		
+	.buscador
+		padding 0 20% 0 20%
+
+		.buscar
+			border-radius 8px
+			width 100%
+			
+		input::-moz-placeholder
+			text-align center
+			
+		input::-webkit-input-placeholder
+			text-align center
+			
+/////////////////////////////////COMEINZA EL SECTION	
+section
+	border 
+	margin 0 5% 0 5%
+
+.items
+	padding 0.5em
+	
+/////////////////////////////////COMEINZA EL ARTICLE 
+article
+	border 1px solid black
+	box-shadow 1px 1px 5px rgba(black, 0.5)
+	
+.item
+	background white
+	border-radius 5px
+	color gris2
+	overflow hidden
+	
+	.img_size
+		height 130px
+		width 30%
+		
+		.minifoto
+			height 100%
+			width 100%
+			
+	.detalles
+		height 100%
+		padding 0.5em
+		
+		h2
+			color gris1
+		
+		.titulo
+			margin 0
+			
+		.descripcion
+			display block
+			margin 0
+			
+		.item_data
+			margin-top 0.3em
+			
+			.condicion
+				display inline
+				margin 0
+				//position relative
+			
+			.tienda
+				display inline
+				margin 0
+				
+		.precio
+			display block
+			position absolute
+			text-align left
+			width 100%
+			margin 1.2em 0 0 1em
+
+
+			
+
+/////////////////////////////////COMIENZA LA BOTONERA O MENU
+nav
+	background gris1
+	bottom 0
+	color blanco
+	position absolute
+	width 100%
+	text-align center
+	
+	.menu
+		margin-bottom .3em
+		padding 0
+		width 100%
+		
+		li
+			display inline-block
+			font-size .8em
+			margin 0 2%
+
+/////////////////////////////////PROPIEDADES Y CLASES AUXILIARES
+a
+	text-decoration none
+	
+.left
+	float left
+	
+.right
+	float right
