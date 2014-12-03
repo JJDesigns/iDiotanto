@@ -11,104 +11,113 @@ body
 
 /////////////////////////////////COMIENZA EL HEADER 
 header
+	display block
 	background gris1
-	overflow hidden
-	padding .5em
+	margin 0
+	padding 0.5em
 	position relative
-	
+		
 	.cabecera_izq
+		float left
 		margin 0
 		padding 0
+		position relative
+		height 20px
+		width 20px
 		
 		.boton_cabecera
-			padding 0.2em 0 0 0.8em
-			width 1.3em
-		
-		
+			position absolute
+			height 100%
+			z-index 10
+	
 	.buscador
+		//height 20px
+		margin 0
 		padding 0 20% 0 20%
-
-		.buscar
-			border-radius 8px
-			width 100%
-			
-		input::-moz-placeholder
-			text-align center
-			
-		input::-webkit-input-placeholder
-			text-align center
+		width 60%
+		position relative
+		
+		form
+			.buscar
+				border-radius 8px
+				border 0
+				height 18px
+				width 100%
+				//position absolute
+		
+	input::-moz-placeholder
+		text-align center
+		
+	input::-webkit-input-placeholder
+		text-align center
 			
 /////////////////////////////////COMEINZA EL SECTION	
 section
-	border 
-	margin 0 5% 0 5%
-
-.items
-	padding 0.5em
+	margin-top 2%
+	position relative
 	
 /////////////////////////////////COMEINZA EL ARTICLE 
 article
-	border 1px solid black
-	box-shadow 1px 1px 5px rgba(black, 0.5)
-	
-.item
-	background white
-	border-radius 5px
-	color gris2
+	border-bottom 1px solid gris2
+	display block
+	height 25%
+	position relative
 	overflow hidden
 	
+.item
+	color gris2
+	
 	.img_size
-		height 130px
-		width 30%
+		float left
+		position relative
+		width 35%
 		
 		.minifoto
-			height 100%
+			height auto
+			position absolute
 			width 100%
 			
 	.detalles
 		height 100%
-		padding 0.5em
+		margin 0 0 0 36%
 		
 		h2
 			color gris1
 		
 		.titulo
+			font-size 14px
 			margin 0
 			
 		.descripcion
-			display block
-			margin 0
+			font-size 12px
+			margin 0.2em 0 0 0
 			
 		.item_data
-			margin-top 0.3em
+			font-size 14px
+			margin 0.2em 0 0 0
 			
 			.condicion
-				display inline
+				display inline-block
 				margin 0
-				//position relative
 			
 			.tienda
-				display inline
-				margin 0
+				display inline-block
+				float right
+				margin 0 0.3em 0 0
 				
 		.precio
-			display block
-			position absolute
-			text-align left
-			width 100%
-			margin 1.2em 0 0 1em
-
-
-			
+			font-size 14px
+			text-align center
+			margin 0 0 0 0		
 
 /////////////////////////////////COMIENZA LA BOTONERA O MENU
 nav
 	background gris1
 	bottom 0
 	color blanco
-	position absolute
-	width 100%
+	position fixed
 	text-align center
+	width 100%
 	
 	.menu
 		margin-bottom .3em
@@ -123,9 +132,4 @@ nav
 /////////////////////////////////PROPIEDADES Y CLASES AUXILIARES
 a
 	text-decoration none
-	
-.left
-	float left
-	
-.right
-	float right
+
